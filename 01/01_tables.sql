@@ -3,6 +3,8 @@ drop table Datum CASCADE CONSTRAINTS;
 drop table TempAbsatz CASCADE CONSTRAINTS;
 drop table Absatz CASCADE CONSTRAINTS;
 drop table kunden CASCADE CONSTRAINTS;
+drop table verkaufer CASCADE CONSTRAINTS;
+drop table verkaeufer CASCADE CONSTRAINTS;
 
 create table artikel as select * from GERKEN.artikel;
 alter table artikel add primary key (artnr);
@@ -14,7 +16,7 @@ create table kunden(
     Name VARCHAR(20),
     Strasse VARCHAR(20),
     PLZ CHAR(5), 
-    Orte VARCHAR(20),
+    Wohnort VARCHAR(20),
     primary key (Kundennummer)
 );
 
@@ -24,6 +26,14 @@ create table Datum(
     Monat number(2),
     Tag number(2),
     primary key (Datum)
+);
+
+create table Verkaeufer(
+    Name VARCHAR(20),
+    Filiale VARCHAR(1) not null,
+	Geburtstag date not null,
+    Wohnort VARCHAR(20),
+    primary key (Name)
 );
 
 create table TempAbsatz(
