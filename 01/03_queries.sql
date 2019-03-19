@@ -1,13 +1,15 @@
 -- Umsatz pro Filiale und Monat (group by)
-select sum(Umsatz), filiale, monat from absatz group by(filiale,monat);
+-- fertig
+select sum(Umsatz) as Umsatz, filiale, monat from absatz, Datum group by(filiale,monat);
 
 -- Welche Filiale hat vom 1.9. – 3.9.2012 die höchste Anzahl von Handcremes verkauft?
-SELECT MAX (anzahl_verkaeufe), filiale
-	FROM (
-		SELECT COUNT(*) AS anzahl_verkaeufe 
+
+		SELECT absatz.filiale, COUNT(*) AS anzahl_verkaeufe
 		FROM Absatz
-		WHERE Absatz.Datum = 1.9.2012 OR Absatz.Datum = 2.9.2012  OR Absatz.Datum = 3.9.2012 
-		GROUP BY filiale);
+		WHERE Absatz.Datum = '1.9.2012' OR Absatz.Datum = '2.9.2012'  OR Absatz.Datum = '3.9.2012' 
+		GROUP BY Absatz.filiale
+        ORDER BY anzahl_verkaeufe DESC
+        fetch first 1 row only;
 		
 -- Umsatz pro Artikelgruppe
 select sum(umsatz), artikel.artikelgruppe 
