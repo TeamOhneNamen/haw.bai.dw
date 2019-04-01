@@ -9,8 +9,12 @@ select sum(Umsatz) as Umsatz, filiale, monat from absatz, Datum group by cube(fi
 -- 3. Welche Filiale hat vom 1.9. – 3.9.2012 die höchste Anzahl von Handcremes verkauft?
 -- feritg
 SELECT absatz.filiale, COUNT(*) AS anzahl_verkaeufe
-    FROM Absatz
-    WHERE Absatz.Datum = '1.9.2012' OR Absatz.Datum = '2.9.2012'  OR Absatz.Datum = '3.9.2012' 
+    FROM Absatz, Artikel
+    WHERE (Absatz.Datum = '1.9.2012' 
+        OR Absatz.Datum = '2.9.2012'  
+        OR Absatz.Datum = '3.9.2012')
+        AND Absatz.artikel = Artikel.ArtNr
+        AND artikel.artname = 'Handcreme'
     GROUP BY Absatz.filiale
     ORDER BY anzahl_verkaeufe DESC
     fetch first 1 row only;
