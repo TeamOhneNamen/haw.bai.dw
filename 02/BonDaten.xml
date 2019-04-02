@@ -1,0 +1,46 @@
+<?xml version="1.0"?> 
+<Schema name="BonDaten"> 
+	<Cube name="BonDaten"> 
+		<Table name="FAKTEN"/> 
+		<Dimension name="Artikel" foreignKey="ARTIKEL"> 
+			<Hierarchy hasAll="true" allMemberName="Alle Artikel" primaryKey="ARTNR"> 
+				<Table name="ARTIKEL"/> 
+				<Level name="ArtName" column="ARTNAME" uniqueMembers="false" />
+				<Level name="ArtNr" column="ARTNR" uniqueMembers="false" /> 
+				<Level name="ArtGr" column="ARTGR" uniqueMembers="false" /> 
+				<Level name="GRPName" column="GRPNAME" uniqueMembers="false" />
+			</Hierarchy>  
+		</Dimension> 
+		<Dimension name="Kunden" foreignKey="KUNDENNUMMER"> 
+			<Hierarchy hasAll="true" allMemberName="Alle Kunden" primaryKey="KUNDENNUMMER"> 
+				<Table name="KUNDEN"/> 
+				<Level name="Vorname" column="VORNAME" uniqueMembers="false" />
+				<Level name="Name" column="NAME" uniqueMembers="false" /> 
+				<Level name="Strasse" column="STRASSE" uniqueMembers="false" /> 
+				<Level name="PLZ" column="PLZ" uniqueMembers="false" />
+				<Level name="Wohnort" column="WOHNORT" uniqueMembers="false" /> 
+			</Hierarchy> 
+		</Dimension> 
+		<Dimension name="Verkaeufer" foreignKey="VERKAEUFER"> 
+			<Hierarchy hasAll="true" allMemberName="Alle Verkaeufer" primaryKey="NAME"> 
+				<Table name="VERKAEUFER"/> 
+				<Level name="Name" column="NAME" uniqueMembers="false" /> 
+				<Level name="Filiale" column="FILIALE" uniqueMembers="false" /> 
+				<Level name="Geburtstag" column="GEBURTSTAG" uniqueMembers="false" />
+				<Level name="Wohnort" column="WOHNORT" uniqueMembers="false" /> 
+			</Hierarchy> 
+		</Dimension> 
+		<Dimension name= "Datum" foreignKey="DATUM_KEY">
+			<Hierarchy hasAll= "true" allMemberName="Top" primaryKey="DAT_KEY">
+				<Table name="DATUM" />
+				<Level name="Jahr" column="JAHR" formatString="####" uniqueMembers="true" />
+				<Level name= "Monat" column="MONAT" formatString="##"
+					uniqueMembers="false">
+				</Level>
+				<Level name="Tag" column="TAG" formatString="##" uniqueMembers="false" />
+			</Hierarchy>
+		</Dimension>
+		<Measure name="Preis" column="PREIS" aggregator="avg" formatString="#.###"/> 
+		<Measure name="Absatz" column="ANZAHL" aggregator="sum" formatString="####"/> 
+	</Cube> 
+</Schema>
