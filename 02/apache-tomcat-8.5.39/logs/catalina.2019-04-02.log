@@ -1,0 +1,46 @@
+02-Apr-2019 13:19:03.488 INFORMATION [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.5.39
+02-Apr-2019 13:19:03.493 INFORMATION [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Mar 14 2019 11:24:26 UTC
+02-Apr-2019 13:19:03.494 INFORMATION [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.5.39.0
+02-Apr-2019 13:19:03.494 INFORMATION [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+02-Apr-2019 13:19:03.494 INFORMATION [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+02-Apr-2019 13:19:03.494 INFORMATION [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+02-Apr-2019 13:19:03.494 INFORMATION [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk1.8.0_201\jre
+02-Apr-2019 13:19:03.497 INFORMATION [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_201-b09
+02-Apr-2019 13:19:03.498 INFORMATION [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+02-Apr-2019 13:19:03.498 INFORMATION [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\Thorben\git\haw.bai.dw\02\apache-tomcat-8.5.39
+02-Apr-2019 13:19:03.498 INFORMATION [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\Thorben\git\haw.bai.dw\02\apache-tomcat-8.5.39
+02-Apr-2019 13:19:03.498 INFORMATION [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\Thorben\git\haw.bai.dw\02\apache-tomcat-8.5.39\conf\logging.properties
+02-Apr-2019 13:19:03.498 INFORMATION [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+02-Apr-2019 13:19:03.498 INFORMATION [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+02-Apr-2019 13:19:03.498 INFORMATION [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+02-Apr-2019 13:19:03.499 INFORMATION [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+02-Apr-2019 13:19:03.499 INFORMATION [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\Thorben\git\haw.bai.dw\02\apache-tomcat-8.5.39
+02-Apr-2019 13:19:03.499 INFORMATION [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\Thorben\git\haw.bai.dw\02\apache-tomcat-8.5.39
+02-Apr-2019 13:19:03.500 INFORMATION [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\Thorben\git\haw.bai.dw\02\apache-tomcat-8.5.39\temp
+02-Apr-2019 13:19:03.500 INFORMATION [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded APR based Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+02-Apr-2019 13:19:03.500 INFORMATION [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+02-Apr-2019 13:19:03.501 INFORMATION [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+02-Apr-2019 13:19:03.506 INFORMATION [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+02-Apr-2019 13:19:05.068 INFORMATION [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+02-Apr-2019 13:19:05.345 INFORMATION [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+02-Apr-2019 13:19:05.362 INFORMATION [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+02-Apr-2019 13:19:05.370 INFORMATION [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+02-Apr-2019 13:19:05.372 INFORMATION [main] org.apache.catalina.startup.Catalina.load Initialization processed in 2418 ms
+02-Apr-2019 13:19:05.402 INFORMATION [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+02-Apr-2019 13:19:05.402 INFORMATION [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.39
+02-Apr-2019 13:19:05.442 INFORMATION [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [C:\Users\Thorben\git\haw.bai.dw\02\apache-tomcat-8.5.39\webapps\jpivot.war]
+02-Apr-2019 13:19:14.297 INFORMATION [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+02-Apr-2019 13:19:14.495 INFORMATION [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\Thorben\git\haw.bai.dw\02\apache-tomcat-8.5.39\webapps\jpivot.war] has finished in [9,052] ms
+02-Apr-2019 13:19:14.496 INFORMATION [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\Thorben\git\haw.bai.dw\02\apache-tomcat-8.5.39\webapps\docs]
+02-Apr-2019 13:19:14.523 INFORMATION [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Thorben\git\haw.bai.dw\02\apache-tomcat-8.5.39\webapps\docs] has finished in [27] ms
+02-Apr-2019 13:19:14.523 INFORMATION [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\Thorben\git\haw.bai.dw\02\apache-tomcat-8.5.39\webapps\examples]
+02-Apr-2019 13:19:15.404 INFORMATION [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Thorben\git\haw.bai.dw\02\apache-tomcat-8.5.39\webapps\examples] has finished in [881] ms
+02-Apr-2019 13:19:15.404 INFORMATION [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\Thorben\git\haw.bai.dw\02\apache-tomcat-8.5.39\webapps\host-manager]
+02-Apr-2019 13:19:15.453 INFORMATION [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Thorben\git\haw.bai.dw\02\apache-tomcat-8.5.39\webapps\host-manager] has finished in [49] ms
+02-Apr-2019 13:19:15.454 INFORMATION [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\Thorben\git\haw.bai.dw\02\apache-tomcat-8.5.39\webapps\manager]
+02-Apr-2019 13:19:15.489 INFORMATION [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Thorben\git\haw.bai.dw\02\apache-tomcat-8.5.39\webapps\manager] has finished in [36] ms
+02-Apr-2019 13:19:15.489 INFORMATION [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\Thorben\git\haw.bai.dw\02\apache-tomcat-8.5.39\webapps\ROOT]
+02-Apr-2019 13:19:15.519 INFORMATION [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Thorben\git\haw.bai.dw\02\apache-tomcat-8.5.39\webapps\ROOT] has finished in [30] ms
+02-Apr-2019 13:19:15.525 INFORMATION [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+02-Apr-2019 13:19:15.558 INFORMATION [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+02-Apr-2019 13:19:15.558 INFORMATION [main] org.apache.catalina.startup.Catalina.start Server startup in 10191 ms

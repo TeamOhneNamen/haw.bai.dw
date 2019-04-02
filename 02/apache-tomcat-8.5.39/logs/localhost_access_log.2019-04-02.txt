@@ -1,0 +1,6 @@
+0:0:0:0:0:0:0:1 - - [02/Apr/2019:13:19:41 +0200] "GET /jpivot/index.jsp HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [02/Apr/2019:13:19:41 +0200] "GET /jpivot/index.jsp HTTP/1.1" 200 1425
+0:0:0:0:0:0:0:1 - - [02/Apr/2019:13:19:41 +0200] "GET /jpivot/css/mdxtable.css HTTP/1.1" 404 1105
+0:0:0:0:0:0:0:1 - - [02/Apr/2019:13:19:41 +0200] "GET /jpivot/css/mdxnavi.css HTTP/1.1" 404 1104
+0:0:0:0:0:0:0:1 - - [02/Apr/2019:13:20:11 +0200] "GET /jpivot/testpage.jsp?query=arrows HTTP/1.1" 200 29817
+0:0:0:0:0:0:0:1 - - [02/Apr/2019:13:21:34 +0200] "GET /jpivot/testpage.jsp?query=testquery HTTP/1.1" 200 6961
