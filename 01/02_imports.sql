@@ -10,9 +10,7 @@ insert into kunden values(18,'Andreas','Bremer','Holtenauer Allee 4','24123','Ki
 insert into kunden values(19,'Klaus','Abraham','Schloss 56','24123','Kiel');
 insert into kunden values(20,'Katharina','Klein','Laboer Landweg 145','24123','Kiel');
 
---Einfügen für Zeilen  1  bis  284  nicht erfolgreich
---ORA-01438: Wert größer als die angegebene Gesamtstellenzahl, die für diese Spalte zulässig ist
---Zeile 23
+
 INSERT INTO TEMPABSATZ (FILIALE, DATUM, UHRZEIT, ARTIKEL, ANZAHL, PREIS, VERKAEUFER, KUNDE) VALUES ('B',to_date('1.9.2012', 'DD.MM.RR'),'9:10',2001,1,209949,'Felix',NULL);
 --Zeile 24
 INSERT INTO TEMPABSATZ (FILIALE, DATUM, UHRZEIT, ARTIKEL, ANZAHL, PREIS, VERKAEUFER, KUNDE) VALUES ('B',to_date('1.9.2012', 'DD.MM.RR'),'9:11',2007,1,249,'Felix',NULL);

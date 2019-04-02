@@ -20,13 +20,10 @@
 <h3>Using the Mondrian OLAP engine</h3>
 
 <ul>
-  <li><a href="testpage.jsp?query=mondrian">Slice and Dice with two hierarchies</a></li>
-  <li><a href="testpage.jsp?query=fourhier">...and with four hierachies</a></li>
-  <li><a href="test/param3.jsp?query=mondrian">Dynamic parameters with Mondrian</a></li>
-  <li><a href="testpage.jsp?query=arrows">Arrows in Cells</a></li>
   <li><a href="testpage.jsp?query=colors">Colors in Cells</a></li>
   <li><a href="testpage.jsp?query=testquery">Test data</a></li>
   <li><a href="test/param1.jsp?query=testquery">Dynamic parameters with test data</a></li>
+  <li><a href="testpage.jsp?query=bon">Bon Starschema</a></li>
 </ul>
 <p/>
 
