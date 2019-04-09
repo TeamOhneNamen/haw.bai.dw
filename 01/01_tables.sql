@@ -31,7 +31,7 @@ create table Datum(
 create table Verkaeufer(
     Name VARCHAR(20),
     Filiale VARCHAR(1) not null,
-	Geburtstag date not null,
+	  Geburtstag date not null,
     Wohnort VARCHAR(20),
     primary key (Name)
 );
@@ -59,7 +59,8 @@ create table Absatz(
     Kundennummer number(5),
     foreign key (Datum) references Datum,
     foreign key (Kundennummer) references Kunden,
-    foreign key (Artikel) references Artikel
+    foreign key (Artikel) references Artikel,
+    foreign key (Verkaeufer) references Verkaeufer
 );
 
 create or replace TRIGGER trigger_absatz_datum
