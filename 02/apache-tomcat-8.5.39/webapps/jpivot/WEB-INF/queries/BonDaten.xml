@@ -5,21 +5,19 @@
 		<Dimension name="ARTIKEL" foreignKey="ARTIKEL"> 
 			<Hierarchy hasAll="true" allMemberName="Alle Artikel" primaryKey="ARTNR"> 
 				<Table name="ARTIKEL"/> 
-				<Level name="ArtNr" column="ARTNR" uniqueMembers="false" /> 
-					<Property name="ArtName" column="ARTNAME" uniqueMembers="false" />
-				<Level name="ArtGrp" column="ARTGRP" uniqueMembers="false" /> 
-					<Property name="GrpName" column="GRPNAME" uniqueMembers="false" />
+				<Level name="GrpName" column="GRPNAME" uniqueMembers="false"	/>
+				<Level name="ArtName" column="ARTNAME" uniqueMembers="false" />
+
 			</Hierarchy>  
 		</Dimension> 
 		<Dimension name="Kunden" foreignKey="KUNDENNUMMER"> 
 			<Hierarchy hasAll="true" allMemberName="Alle Kunden" primaryKey="KUNDENNUMMER"> 
 				<Table name="KUNDEN"/> 
-				<Level name="KUNDENNUMMER" column="KUNDENNUMMER" uniqueMembers="true" />
-					<Property name= "Vorname" column="VORNAME" uniqueMembers="false" />
+				<Level name= "Vorname" column="VORNAME" uniqueMembers="false" />
 					<Property name= "Name" column="NAME" uniqueMembers="false" /> 
 			</Hierarchy> 
 		</Dimension> 
-		<Dimension name="Verkaeufer" foreignKey="NAME"> 
+		<Dimension name="Verkaeufer" foreignKey="VERKAEUFER"> 
 			<Hierarchy hasAll="true" allMemberName="Alle Verkaeufer" primaryKey="NAME"> 
 				<Table name="VERKAEUFER"/> 
 				<Level name="Name" column="NAME" uniqueMembers="false" /> 

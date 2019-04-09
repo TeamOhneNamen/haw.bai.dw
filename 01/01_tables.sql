@@ -3,7 +3,6 @@ drop table Datum CASCADE CONSTRAINTS;
 drop table TempAbsatz CASCADE CONSTRAINTS;
 drop table Absatz CASCADE CONSTRAINTS;
 drop table kunden CASCADE CONSTRAINTS;
-drop table verkaufer CASCADE CONSTRAINTS;
 drop table verkaeufer CASCADE CONSTRAINTS;
 
 create table artikel as select * from GERKEN.artikel;
@@ -59,7 +58,8 @@ create table Absatz(
     Kundennummer number(5),
     foreign key (Datum) references Datum,
     foreign key (Kundennummer) references Kunden,
-    foreign key (Artikel) references Artikel
+    foreign key (Artikel) references Artikel,
+    foreign key (Verkaeufer) references Verkaeufer
 );
 
 create or replace TRIGGER trigger_absatz_datum
@@ -96,7 +96,7 @@ begin
     SELECT COUNT(*) INTO Temp FROM artikel WHERE artnr = :new.Artikel;
     IF (Temp=0 AND :new.Artikel IS NOT null)
     THEN
-        Insert into Artikel values(:new.Artikel, 'Artikel ' || :new.Artikel, null, null);
+        Insert into Artikel values(:new.Artikel, 'Artikel ' || :new.Artikel, null, 'Anderes');
     end if;
 
     Insert into absatz values(:new.Filiale, :new.Datum, :new.Uhrzeit, :new.Artikel, :new.Anzahl, NewPreis, umsatz, :new.verkaeufer, :new.kunde);

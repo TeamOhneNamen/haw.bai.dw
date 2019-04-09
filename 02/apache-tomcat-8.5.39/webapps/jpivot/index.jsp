@@ -20,6 +20,8 @@
 <h3>Using the Mondrian OLAP engine</h3>
 
 <ul>
+  <li><a href="test/param3.jsp?query=mondrian">Dynamic parameters with Mondrian</a></li>
+  <li><a href="testpage.jsp?query=arrows">Arrows in Cells</a></li>
   <li><a href="testpage.jsp?query=colors">Colors in Cells</a></li>
   <li><a href="testpage.jsp?query=testquery">Test data</a></li>
   <li><a href="test/param1.jsp?query=testquery">Dynamic parameters with test data</a></li>
