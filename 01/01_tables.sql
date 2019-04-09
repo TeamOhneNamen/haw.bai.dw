@@ -30,7 +30,7 @@ create table Datum(
 create table Verkaeufer(
     Name VARCHAR(20),
     Filiale VARCHAR(1) not null,
-	Geburtstag date not null,
+	  Geburtstag date not null,
     Wohnort VARCHAR(20),
     primary key (Name)
 );
