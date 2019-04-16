@@ -1,0 +1,227 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="d97ab786-04fd-42d3-a6e4-b4d356b5506b" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Acf040</ID>
+  <Name>Acf040</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>Acf040</DataSourceID>
+  <Schema>
+    <xs:schema id="Acf040" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Acf040" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="fcb49543-7e45-4a27-a4ac-ed2be2370417">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="ACF040_ABSATZ" msprop:design-time-name="ce3f782d-a54e-4c23-a897-36d1c9dd0b9c" msprop:DbTableName="ABSATZ" msprop:FriendlyName="ABSATZ" msprop:DbSchemaName="ACF040" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="FILIALE" msprop:design-time-name="e1178f01-d737-47e0-a694-705d02475727" msprop:DbColumnName="FILIALE" msprop:FriendlyName="FILIALE">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="1" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="DATUM" msprop:design-time-name="b83c5726-5ff4-422c-a3ae-1a23443ecc6a" msprop:DbColumnName="DATUM" msprop:FriendlyName="DATUM" type="xs:dateTime" />
+                  <xs:element name="UHRZEIT" msprop:design-time-name="7a1030de-9628-4479-b782-7f03e2a74315" msprop:DbColumnName="UHRZEIT" msprop:FriendlyName="UHRZEIT">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="5" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="ARTIKEL" msprop:design-time-name="3609ee99-fb24-48e9-b1ae-bbf57ede28c6" msprop:DbColumnName="ARTIKEL" msprop:FriendlyName="ARTIKEL" type="xs:decimal" />
+                  <xs:element name="ANZAHL" msprop:design-time-name="7a4b4510-2641-4eea-bd24-d89d34a15536" msprop:DbColumnName="ANZAHL" msprop:FriendlyName="ANZAHL" type="xs:decimal" />
+                  <xs:element name="PREIS" msprop:design-time-name="cb86af21-6a71-4fdc-90f2-0e0de2b2653e" msprop:DbColumnName="PREIS" msprop:FriendlyName="PREIS" type="xs:decimal" />
+                  <xs:element name="UMSATZ" msprop:design-time-name="156f096b-af03-40d0-a90d-33961f3c4bfd" msprop:DbColumnName="UMSATZ" msprop:FriendlyName="UMSATZ" type="xs:decimal" />
+                  <xs:element name="VERKAEUFER" msprop:design-time-name="d453b85c-14a4-4cf4-8b54-b0872fca354d" msprop:DbColumnName="VERKAEUFER" msprop:FriendlyName="VERKAEUFER">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="KUNDENNUMMER" msprop:design-time-name="288ff6c0-174e-4cfb-99cb-9430145791d4" msprop:DbColumnName="KUNDENNUMMER" msprop:FriendlyName="KUNDENNUMMER" type="xs:decimal" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="ACF040_ARTIKEL" msprop:design-time-name="51e0b41f-f214-4285-a19f-2a5dec1b49c5" msprop:DbTableName="ARTIKEL" msprop:FriendlyName="ARTIKEL" msprop:DbSchemaName="ACF040" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ARTNR" msprop:design-time-name="af1ecfc8-1bba-4c4a-9789-1cbeeab85682" msprop:DbColumnName="ARTNR" msprop:FriendlyName="ARTNR" type="xs:decimal" />
+                  <xs:element name="ARTNAME" msprop:design-time-name="870e0705-ea19-4f79-8698-57ca783cba8c" msprop:DbColumnName="ARTNAME" msprop:FriendlyName="ARTNAME">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="30" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="ARTGRP" msprop:design-time-name="a206d4a3-b817-4f29-a73f-a68e1cb31c9c" msprop:DbColumnName="ARTGRP" msprop:FriendlyName="ARTGRP" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="1" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="GRPNAME" msprop:design-time-name="ad79f712-101b-4a94-bee1-9fb6843f76f8" msprop:DbColumnName="GRPNAME" msprop:FriendlyName="GRPNAME" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="ACF040_DATUM" msprop:design-time-name="f84f9001-b598-4e66-919b-d7c327d7ef01" msprop:DbTableName="DATUM" msprop:FriendlyName="DATUM" msprop:DbSchemaName="ACF040" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="DATUM" msprop:design-time-name="9f2f8c11-573a-4209-9606-db39f5088c6e" msprop:DbColumnName="DATUM" msprop:FriendlyName="DATUM" type="xs:dateTime" />
+                  <xs:element name="JAHR" msprop:design-time-name="f4b56080-3c05-4c78-85c3-a62a3dc7d684" msprop:DbColumnName="JAHR" msprop:FriendlyName="JAHR" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="MONAT" msprop:design-time-name="ae32a122-b11b-465d-b8a8-00b66f9dc44e" msprop:DbColumnName="MONAT" msprop:FriendlyName="MONAT" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="TAG" msprop:design-time-name="ff7fa1c9-9cf3-47a9-9884-26ebdb827da6" msprop:DbColumnName="TAG" msprop:FriendlyName="TAG" type="xs:decimal" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="ACF040_KUNDEN" msprop:design-time-name="74dccaf8-3507-43d9-9d1c-32c882d62d3c" msprop:DbTableName="KUNDEN" msprop:FriendlyName="KUNDEN" msprop:DbSchemaName="ACF040" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="KUNDENNUMMER" msprop:design-time-name="e69e9d56-88a4-4fdb-b65d-0c99b8fbdde3" msprop:DbColumnName="KUNDENNUMMER" msprop:FriendlyName="KUNDENNUMMER" type="xs:decimal" />
+                  <xs:element name="VORNAME" msprop:design-time-name="603e6a76-b560-4c62-80a9-ddf560af70e7" msprop:DbColumnName="VORNAME" msprop:FriendlyName="VORNAME" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="NAME" msprop:design-time-name="ab737ed8-fcc1-45c6-85f7-5d797415fd01" msprop:DbColumnName="NAME" msprop:FriendlyName="NAME" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="STRASSE" msprop:design-time-name="a296e09c-f64d-49c9-b2e4-7afcdcbbedc6" msprop:DbColumnName="STRASSE" msprop:FriendlyName="STRASSE" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="PLZ" msprop:design-time-name="0101f7e2-0fae-4ed3-a3b0-52aa065e89ab" msprop:DbColumnName="PLZ" msprop:FriendlyName="PLZ" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="5" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="WOHNORT" msprop:design-time-name="47f4b3cf-0a5f-4fb1-9f4f-87041fe27f6c" msprop:DbColumnName="WOHNORT" msprop:FriendlyName="WOHNORT" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="ACF040_VERKAEUFER" msprop:design-time-name="741d137b-2e24-4073-89d2-ec187e03c802" msprop:DbTableName="VERKAEUFER" msprop:FriendlyName="VERKAEUFER" msprop:DbSchemaName="ACF040" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="NAME" msprop:design-time-name="797d1431-97e8-49cb-ad21-a4f0e68acd9d" msprop:DbColumnName="NAME" msprop:FriendlyName="NAME">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="FILIALE" msprop:design-time-name="eded5880-0c3e-45ee-9a91-588246217f38" msprop:DbColumnName="FILIALE" msprop:FriendlyName="FILIALE">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="1" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="GEBURTSTAG" msprop:design-time-name="e6360366-3964-4c7b-825f-3aa7a3fb7253" msprop:DbColumnName="GEBURTSTAG" msprop:FriendlyName="GEBURTSTAG" type="xs:dateTime" />
+                  <xs:element name="WOHNORT" msprop:design-time-name="d1a289ca-ecaf-4606-8b71-ac589ccd0cf6" msprop:DbColumnName="WOHNORT" msprop:FriendlyName="WOHNORT" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//ACF040_ARTIKEL" />
+          <xs:field xpath="ARTNR" />
+        </xs:unique>
+        <xs:unique name="ACF040_DATUM_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//ACF040_DATUM" />
+          <xs:field xpath="DATUM" />
+        </xs:unique>
+        <xs:unique name="ACF040_KUNDEN_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//ACF040_KUNDEN" />
+          <xs:field xpath="KUNDENNUMMER" />
+        </xs:unique>
+        <xs:unique name="ACF040_VERKAEUFER_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//ACF040_VERKAEUFER" />
+          <xs:field xpath="NAME" />
+        </xs:unique>
+        <xs:keyref name="FK__ABSATZ__DATUM__300424B4" refer="ACF040_DATUM_Constraint1">
+          <xs:selector xpath=".//ACF040_ABSATZ" />
+          <xs:field xpath="DATUM" />
+        </xs:keyref>
+        <xs:keyref name="FK__ABSATZ__KUNDENNU__30F848ED" refer="ACF040_KUNDEN_Constraint1">
+          <xs:selector xpath=".//ACF040_ABSATZ" />
+          <xs:field xpath="KUNDENNUMMER" />
+        </xs:keyref>
+        <xs:keyref name="FK__ABSATZ__VERKAEUF__32E0915F" refer="ACF040_VERKAEUFER_Constraint1">
+          <xs:selector xpath=".//ACF040_ABSATZ" />
+          <xs:field xpath="VERKAEUFER" />
+        </xs:keyref>
+        <xs:keyref name="FK__ABSATZ__ARTIKEL__31EC6D26" refer="Constraint1">
+          <xs:selector xpath=".//ACF040_ABSATZ" />
+          <xs:field xpath="ARTIKEL" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <Acf040 xmlns="" />
+  </Schema>
+</DataSourceView>

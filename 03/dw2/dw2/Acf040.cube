@@ -1,0 +1,288 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="b60b5ce1-77d1-475b-8d02-877e8dbe632f" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Acf040</ID>
+  <Name>Acf040</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="eec95ebe-6be1-458b-8354-acb5f0faab79">
+      <ID>ARTIKEL</ID>
+      <Name>ARTIKEL</Name>
+      <DimensionID>ARTIKEL</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="23806765-6273-451e-b394-fee3962ef052">
+          <AttributeID>ARTNR</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2fd1bc0e-0564-48d1-ba17-d7cf336e01b0">
+          <AttributeID>ARTNAME</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d8308bd4-aaf8-4d47-96aa-260c4395fc51">
+          <AttributeID>ARTGRP</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="edf87804-edae-47dc-b276-a70c404a1c59">
+          <AttributeID>GRPNAME</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="62a7e40c-c7e5-4375-a3db-61899b0ea8ec">
+          <HierarchyID>Hierarchie</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="dc201262-ebd3-4192-970a-af347b925f60">
+      <ID>VERKAEUFER</ID>
+      <Name>VERKAEUFER</Name>
+      <DimensionID>VERKAEUFER</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="e7d5c8ff-211b-4a57-8825-4f13f2a7329f">
+          <AttributeID>NAME</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="17961ffa-dfa8-4cf4-8630-4b4618b7f66c">
+          <AttributeID>FILIALE</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="df95f703-ba2b-41e5-ab50-0e35ee7b4f93">
+          <AttributeID>GEBURTSTAG</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="03035c05-0720-4d59-8ce0-4e1d372f00fb">
+          <AttributeID>WOHNORT</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="a4e71d03-1d60-44aa-9b20-69bcb74b63db">
+          <HierarchyID>Hierarchie</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="81b6cd1c-4759-4e3e-8e7e-7a9e1ced780b">
+      <ID>KUNDEN</ID>
+      <Name>KUNDEN</Name>
+      <DimensionID>KUNDEN</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="4168ad87-e96a-46ed-a7cb-da801b854d77">
+          <AttributeID>KUNDENNUMMER</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1bae4eb7-69bd-4044-90ab-d813edaac795">
+          <AttributeID>VORNAME</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="39a22169-3737-491e-a218-da0922767ff8">
+          <AttributeID>NAME</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="51806f10-0f70-481b-bd59-8ed66ce9237d">
+          <AttributeID>STRASSE</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e95e7eb9-71f3-4428-adbf-b64b48831525">
+          <AttributeID>PLZ</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="572da31d-46ed-4460-bf09-34c8884a71f8">
+          <AttributeID>WOHNORT</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="ae424287-5f23-44ac-91c7-3ab45ba8d184">
+          <HierarchyID>Hierarchie</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="939cfae9-6b8f-485f-8f49-0cb5d6f5434d">
+      <ID>DATUM</ID>
+      <Name>DATUM</Name>
+      <DimensionID>DATUM</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="7e5f06d9-3758-4f55-a56e-5baf0b9a0f4c">
+          <AttributeID>DATUM</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="54292ac1-08eb-4bb8-8ca3-cb4d4c0d86b8">
+          <AttributeID>JAHR</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4dc8f1c7-f378-42c1-bf10-a10190287324">
+          <AttributeID>MONAT</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="7d4012e5-ef09-4552-bee5-b2091754f3f6">
+          <AttributeID>TAG</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="b64ad523-dad9-4785-8af3-1881dcac809a">
+          <HierarchyID>Hierarchie</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="286c4566-c9d2-443e-b546-0d456b56cdcb">
+      <ID>ABSATZ</ID>
+      <Name>ABSATZ</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="b1990e42-f7c8-4a85-b4c7-5a019796249a">
+          <ID>ANZAHL</ID>
+          <Name>ANZAHL</Name>
+          <Source dwd:design-time-name="b3d1494d-8d92-4815-833c-8e2675162e73">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="7a9eb216-f67b-4d39-9963-d5515db29ffb">
+              <TableID>ACF040_ABSATZ</TableID>
+              <ColumnID>ANZAHL</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="66ae8d3e-51e4-4353-819c-41a7c67b8e9a">
+          <ID>PREIS</ID>
+          <Name>PREIS</Name>
+          <Source dwd:design-time-name="6f71d707-9344-4b10-874d-88642b730240">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="79bb108e-e40f-4396-8989-ca7eb9dc97a7">
+              <TableID>ACF040_ABSATZ</TableID>
+              <ColumnID>PREIS</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="deda7499-ea45-4600-b470-2cd60c0d4f69">
+          <ID>UMSATZ</ID>
+          <Name>UMSATZ</Name>
+          <Source dwd:design-time-name="80de228f-50ca-4d30-87ef-f67eaa3aac44">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="fc05b150-cc66-459c-8a43-260c89718306">
+              <TableID>ACF040_ABSATZ</TableID>
+              <ColumnID>UMSATZ</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="84595c2c-9716-44c1-87cd-914513f2187a">
+          <ID>ABSATZ  Anzahl</ID>
+          <Name>ABSATZ  Anzahl</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="13ed59f8-f2d9-4936-ad5f-1ca1661eecd6">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="6b746875-7728-4d68-b7f5-f40fd4974737">
+              <TableID>ACF040_ABSATZ</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="a9cac2e9-2dca-4492-8caa-d21d260c6ed8">
+          <CubeDimensionID>ARTIKEL</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="0f032bcc-3687-452e-af3c-b86ee7733523">
+              <AttributeID>ARTNR</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="4daf17d4-5673-4386-b223-1e5505012d32">
+                  <DataType>Double</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="6c654345-00d0-4773-895a-03a5ff8c1ccf">
+                    <TableID>ACF040_ABSATZ</TableID>
+                    <ColumnID>ARTIKEL</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="dc425fe4-f470-4caa-b2cd-4f63a7a28726">
+          <CubeDimensionID>VERKAEUFER</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="fbe15299-9ca5-496a-9194-539583cc3ab8">
+              <AttributeID>NAME</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="bc9f4cf4-7d84-47d1-8c02-b33696572c82">
+                  <DataType>WChar</DataType>
+                  <DataSize>20</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="ba78fec0-5c9f-4b4c-8c98-657619ee6844">
+                    <TableID>ACF040_ABSATZ</TableID>
+                    <ColumnID>VERKAEUFER</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="fa3f2fdc-20b8-49a3-a8c5-3c536f059a0e">
+          <CubeDimensionID>KUNDEN</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="bd3becde-7fb6-49ff-af23-2ed850b459dc">
+              <AttributeID>KUNDENNUMMER</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="74064b2c-9d9e-4d1c-92f1-547ad81b990b">
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <DataType>Double</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="6a36f1a2-3091-412a-be18-a8005ff73cda">
+                    <TableID>ACF040_ABSATZ</TableID>
+                    <ColumnID>KUNDENNUMMER</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="36317689-a5e1-4c3c-96c8-9f23df36a4a5">
+          <CubeDimensionID>DATUM</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="cae4a474-9651-4d0e-b831-3bd5a6b70019">
+              <AttributeID>DATUM</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="e97501aa-1c97-4c8d-84f7-49940fa9bd8b">
+                  <DataType>Date</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="1149d3b9-3824-472c-9d40-86e3486958f3">
+                    <TableID>ACF040_ABSATZ</TableID>
+                    <ColumnID>DATUM</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="5a5d8b88-724e-497c-90c9-78714c491478">
+    <DataSourceViewID>Acf040</DataSourceViewID>
+  </Source>
+</Cube>

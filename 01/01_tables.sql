@@ -39,7 +39,7 @@ create table TempAbsatz(
     Filiale VARCHAR(1) not null,
     Datum date not null,
     Uhrzeit VARCHAR(5) not null,
-    Artikel number(5) not null,
+    Artikel number(4) not null,
     Anzahl number(5) not null, 
     Preis number(10) not null,
     Verkaeufer VARCHAR(20) not null,
@@ -50,7 +50,7 @@ create table Absatz(
     Filiale VARCHAR(1) not null,
     Datum date not null,
     Uhrzeit VARCHAR(5) not null,
-    Artikel number(5) not null,
+    Artikel number(4) not null,
     Anzahl number(5) not null, 
     Preis number(7,2) not null,
     Umsatz number (35,2) not null,
@@ -96,7 +96,7 @@ begin
     SELECT COUNT(*) INTO Temp FROM artikel WHERE artnr = :new.Artikel;
     IF (Temp=0 AND :new.Artikel IS NOT null)
     THEN
-        Insert into Artikel values(:new.Artikel, 'Artikel ' || :new.Artikel, null, 'Anderes');
+        Insert into Artikel values(:new.Artikel, 'Artikel ' || :new.Artikel, null, null);
     end if;
 
     Insert into absatz values(:new.Filiale, :new.Datum, :new.Uhrzeit, :new.Artikel, :new.Anzahl, NewPreis, umsatz, :new.verkaeufer, :new.kunde);
