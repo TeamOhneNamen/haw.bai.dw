@@ -20,7 +20,7 @@ create table kunden(
 );
 
 create table Datum(
-    Datum date not null,
+    Datum varchar(10) not null,
     Jahr number(4),
     Monat number(2),
     Tag number(2),
@@ -48,7 +48,7 @@ create table TempAbsatz(
 
 create table Absatz(
     Filiale VARCHAR(1) not null,
-    Datum date not null,
+    Datum varchar(10) not null,
     Uhrzeit VARCHAR(5) not null,
     Artikel number(4) not null,
     Anzahl number(5) not null, 

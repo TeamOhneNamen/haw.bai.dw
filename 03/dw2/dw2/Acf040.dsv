@@ -1,4 +1,4 @@
-﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="d97ab786-04fd-42d3-a6e4-b4d356b5506b" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="f9c37e37-ed9f-4dd8-a8de-e29ec7a77b04" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Acf040</ID>
   <Name>Acf040</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -42,61 +42,61 @@
   <DataSourceID>Acf040</DataSourceID>
   <Schema>
     <xs:schema id="Acf040" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
-      <xs:element name="Acf040" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="fcb49543-7e45-4a27-a4ac-ed2be2370417">
+      <xs:element name="Acf040" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="7a5d0415-e03c-4374-ac98-daf77053d787">
         <xs:complexType>
           <xs:choice minOccurs="0" maxOccurs="unbounded">
-            <xs:element name="ACF040_ABSATZ" msprop:design-time-name="ce3f782d-a54e-4c23-a897-36d1c9dd0b9c" msprop:DbTableName="ABSATZ" msprop:FriendlyName="ABSATZ" msprop:DbSchemaName="ACF040" msprop:TableType="Table">
+            <xs:element name="ACF040_ABSATZ" msprop:design-time-name="076a4a53-44fe-4871-bb20-815f2dbb8c1a" msprop:DbTableName="ABSATZ" msprop:FriendlyName="ABSATZ" msprop:DbSchemaName="ACF040" msprop:TableType="Table">
               <xs:complexType>
                 <xs:sequence>
-                  <xs:element name="FILIALE" msprop:design-time-name="e1178f01-d737-47e0-a694-705d02475727" msprop:DbColumnName="FILIALE" msprop:FriendlyName="FILIALE">
+                  <xs:element name="FILIALE" msprop:design-time-name="5b75b123-99f2-4552-b286-f9281d7207b3" msprop:DbColumnName="FILIALE" msprop:FriendlyName="FILIALE">
                     <xs:simpleType>
                       <xs:restriction base="xs:string">
                         <xs:maxLength value="1" />
                       </xs:restriction>
                     </xs:simpleType>
                   </xs:element>
-                  <xs:element name="DATUM" msprop:design-time-name="b83c5726-5ff4-422c-a3ae-1a23443ecc6a" msprop:DbColumnName="DATUM" msprop:FriendlyName="DATUM" type="xs:dateTime" />
-                  <xs:element name="UHRZEIT" msprop:design-time-name="7a1030de-9628-4479-b782-7f03e2a74315" msprop:DbColumnName="UHRZEIT" msprop:FriendlyName="UHRZEIT">
+                  <xs:element name="DATUM" msprop:design-time-name="75a95126-fe46-47df-9d15-e48ca168c727" msprop:DbColumnName="DATUM" msprop:FriendlyName="DATUM" type="xs:dateTime" />
+                  <xs:element name="UHRZEIT" msprop:design-time-name="9f48fa19-7579-4402-ba0a-7b6b3bc5ee74" msprop:DbColumnName="UHRZEIT" msprop:FriendlyName="UHRZEIT">
                     <xs:simpleType>
                       <xs:restriction base="xs:string">
                         <xs:maxLength value="5" />
                       </xs:restriction>
                     </xs:simpleType>
                   </xs:element>
-                  <xs:element name="ARTIKEL" msprop:design-time-name="3609ee99-fb24-48e9-b1ae-bbf57ede28c6" msprop:DbColumnName="ARTIKEL" msprop:FriendlyName="ARTIKEL" type="xs:decimal" />
-                  <xs:element name="ANZAHL" msprop:design-time-name="7a4b4510-2641-4eea-bd24-d89d34a15536" msprop:DbColumnName="ANZAHL" msprop:FriendlyName="ANZAHL" type="xs:decimal" />
-                  <xs:element name="PREIS" msprop:design-time-name="cb86af21-6a71-4fdc-90f2-0e0de2b2653e" msprop:DbColumnName="PREIS" msprop:FriendlyName="PREIS" type="xs:decimal" />
-                  <xs:element name="UMSATZ" msprop:design-time-name="156f096b-af03-40d0-a90d-33961f3c4bfd" msprop:DbColumnName="UMSATZ" msprop:FriendlyName="UMSATZ" type="xs:decimal" />
-                  <xs:element name="VERKAEUFER" msprop:design-time-name="d453b85c-14a4-4cf4-8b54-b0872fca354d" msprop:DbColumnName="VERKAEUFER" msprop:FriendlyName="VERKAEUFER">
+                  <xs:element name="ARTIKEL" msprop:design-time-name="a143cab7-7a45-4fbe-a39d-3ade812f7349" msprop:DbColumnName="ARTIKEL" msprop:FriendlyName="ARTIKEL" type="xs:decimal" />
+                  <xs:element name="ANZAHL" msprop:design-time-name="09fcb7e5-fffe-40cb-a15d-43fc6f2383ac" msprop:DbColumnName="ANZAHL" msprop:FriendlyName="ANZAHL" type="xs:decimal" />
+                  <xs:element name="PREIS" msprop:design-time-name="f144653f-41f3-45ac-936d-097fcc7156b4" msprop:DbColumnName="PREIS" msprop:FriendlyName="PREIS" type="xs:decimal" />
+                  <xs:element name="UMSATZ" msprop:design-time-name="3eec750d-ecc0-4ebe-bcd6-b68b4f9a494c" msprop:DbColumnName="UMSATZ" msprop:FriendlyName="UMSATZ" type="xs:decimal" />
+                  <xs:element name="VERKAEUFER" msprop:design-time-name="459c66f8-d1c3-46b0-93ef-a97217956375" msprop:DbColumnName="VERKAEUFER" msprop:FriendlyName="VERKAEUFER">
                     <xs:simpleType>
                       <xs:restriction base="xs:string">
                         <xs:maxLength value="20" />
                       </xs:restriction>
                     </xs:simpleType>
                   </xs:element>
-                  <xs:element name="KUNDENNUMMER" msprop:design-time-name="288ff6c0-174e-4cfb-99cb-9430145791d4" msprop:DbColumnName="KUNDENNUMMER" msprop:FriendlyName="KUNDENNUMMER" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="KUNDENNUMMER" msprop:design-time-name="a68c8351-1aeb-42c8-9cdc-5230e5c4c6b3" msprop:DbColumnName="KUNDENNUMMER" msprop:FriendlyName="KUNDENNUMMER" type="xs:decimal" minOccurs="0" />
                 </xs:sequence>
               </xs:complexType>
             </xs:element>
-            <xs:element name="ACF040_ARTIKEL" msprop:design-time-name="51e0b41f-f214-4285-a19f-2a5dec1b49c5" msprop:DbTableName="ARTIKEL" msprop:FriendlyName="ARTIKEL" msprop:DbSchemaName="ACF040" msprop:TableType="Table">
+            <xs:element name="ACF040_ARTIKEL" msprop:design-time-name="aacbd69b-f5eb-4467-8577-5bdb0085f426" msprop:DbTableName="ARTIKEL" msprop:FriendlyName="ARTIKEL" msprop:DbSchemaName="ACF040" msprop:TableType="Table">
               <xs:complexType>
                 <xs:sequence>
-                  <xs:element name="ARTNR" msprop:design-time-name="af1ecfc8-1bba-4c4a-9789-1cbeeab85682" msprop:DbColumnName="ARTNR" msprop:FriendlyName="ARTNR" type="xs:decimal" />
-                  <xs:element name="ARTNAME" msprop:design-time-name="870e0705-ea19-4f79-8698-57ca783cba8c" msprop:DbColumnName="ARTNAME" msprop:FriendlyName="ARTNAME">
+                  <xs:element name="ARTNR" msprop:design-time-name="491b3376-5b75-4ba9-9406-e136d3ba6db2" msprop:DbColumnName="ARTNR" msprop:FriendlyName="ARTNR" type="xs:decimal" />
+                  <xs:element name="ARTNAME" msprop:design-time-name="7f39e517-5fef-4175-9886-6221a9febd91" msprop:DbColumnName="ARTNAME" msprop:FriendlyName="ARTNAME">
                     <xs:simpleType>
                       <xs:restriction base="xs:string">
                         <xs:maxLength value="30" />
                       </xs:restriction>
                     </xs:simpleType>
                   </xs:element>
-                  <xs:element name="ARTGRP" msprop:design-time-name="a206d4a3-b817-4f29-a73f-a68e1cb31c9c" msprop:DbColumnName="ARTGRP" msprop:FriendlyName="ARTGRP" minOccurs="0">
+                  <xs:element name="ARTGRP" msprop:design-time-name="9ef1c84a-446e-40c9-a714-07b7a7a4e3ba" msprop:DbColumnName="ARTGRP" msprop:FriendlyName="ARTGRP" minOccurs="0">
                     <xs:simpleType>
                       <xs:restriction base="xs:string">
                         <xs:maxLength value="1" />
                       </xs:restriction>
                     </xs:simpleType>
                   </xs:element>
-                  <xs:element name="GRPNAME" msprop:design-time-name="ad79f712-101b-4a94-bee1-9fb6843f76f8" msprop:DbColumnName="GRPNAME" msprop:FriendlyName="GRPNAME" minOccurs="0">
+                  <xs:element name="GRPNAME" msprop:design-time-name="210ee5b3-ecef-47c5-8281-2bf08a1e29df" msprop:DbColumnName="GRPNAME" msprop:FriendlyName="GRPNAME" minOccurs="0">
                     <xs:simpleType>
                       <xs:restriction base="xs:string">
                         <xs:maxLength value="20" />
@@ -106,49 +106,49 @@
                 </xs:sequence>
               </xs:complexType>
             </xs:element>
-            <xs:element name="ACF040_DATUM" msprop:design-time-name="f84f9001-b598-4e66-919b-d7c327d7ef01" msprop:DbTableName="DATUM" msprop:FriendlyName="DATUM" msprop:DbSchemaName="ACF040" msprop:TableType="Table">
+            <xs:element name="ACF040_DATUM" msprop:design-time-name="cd583a39-af0e-4c78-bf43-43f3a7b9d385" msprop:DbTableName="DATUM" msprop:FriendlyName="DATUM" msprop:DbSchemaName="ACF040" msprop:TableType="Table">
               <xs:complexType>
                 <xs:sequence>
-                  <xs:element name="DATUM" msprop:design-time-name="9f2f8c11-573a-4209-9606-db39f5088c6e" msprop:DbColumnName="DATUM" msprop:FriendlyName="DATUM" type="xs:dateTime" />
-                  <xs:element name="JAHR" msprop:design-time-name="f4b56080-3c05-4c78-85c3-a62a3dc7d684" msprop:DbColumnName="JAHR" msprop:FriendlyName="JAHR" type="xs:decimal" minOccurs="0" />
-                  <xs:element name="MONAT" msprop:design-time-name="ae32a122-b11b-465d-b8a8-00b66f9dc44e" msprop:DbColumnName="MONAT" msprop:FriendlyName="MONAT" type="xs:decimal" minOccurs="0" />
-                  <xs:element name="TAG" msprop:design-time-name="ff7fa1c9-9cf3-47a9-9884-26ebdb827da6" msprop:DbColumnName="TAG" msprop:FriendlyName="TAG" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="DATUM" msprop:design-time-name="8f63d631-47fb-4750-a0f7-794d0737e7bf" msprop:DbColumnName="DATUM" msprop:FriendlyName="DATUM" type="xs:dateTime" />
+                  <xs:element name="JAHR" msprop:design-time-name="b4644651-3f75-405c-b884-eeb2e742be27" msprop:DbColumnName="JAHR" msprop:FriendlyName="JAHR" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="MONAT" msprop:design-time-name="f5029090-7828-46af-958a-c10fa4ad235f" msprop:DbColumnName="MONAT" msprop:FriendlyName="MONAT" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="TAG" msprop:design-time-name="58a53986-ae07-403e-90a7-86c75f899836" msprop:DbColumnName="TAG" msprop:FriendlyName="TAG" type="xs:decimal" minOccurs="0" />
                 </xs:sequence>
               </xs:complexType>
             </xs:element>
-            <xs:element name="ACF040_KUNDEN" msprop:design-time-name="74dccaf8-3507-43d9-9d1c-32c882d62d3c" msprop:DbTableName="KUNDEN" msprop:FriendlyName="KUNDEN" msprop:DbSchemaName="ACF040" msprop:TableType="Table">
+            <xs:element name="ACF040_KUNDEN" msprop:design-time-name="5c07f2d6-6b41-4257-a149-a27d285e0080" msprop:DbTableName="KUNDEN" msprop:FriendlyName="KUNDEN" msprop:DbSchemaName="ACF040" msprop:TableType="Table">
               <xs:complexType>
                 <xs:sequence>
-                  <xs:element name="KUNDENNUMMER" msprop:design-time-name="e69e9d56-88a4-4fdb-b65d-0c99b8fbdde3" msprop:DbColumnName="KUNDENNUMMER" msprop:FriendlyName="KUNDENNUMMER" type="xs:decimal" />
-                  <xs:element name="VORNAME" msprop:design-time-name="603e6a76-b560-4c62-80a9-ddf560af70e7" msprop:DbColumnName="VORNAME" msprop:FriendlyName="VORNAME" minOccurs="0">
+                  <xs:element name="KUNDENNUMMER" msprop:design-time-name="fb46a10b-41cb-4e69-b0b8-bee7c461036a" msprop:DbColumnName="KUNDENNUMMER" msprop:FriendlyName="KUNDENNUMMER" type="xs:decimal" />
+                  <xs:element name="VORNAME" msprop:design-time-name="033e0b6d-8bb6-4061-a025-dd3b12ea5268" msprop:DbColumnName="VORNAME" msprop:FriendlyName="VORNAME" minOccurs="0">
                     <xs:simpleType>
                       <xs:restriction base="xs:string">
                         <xs:maxLength value="20" />
                       </xs:restriction>
                     </xs:simpleType>
                   </xs:element>
-                  <xs:element name="NAME" msprop:design-time-name="ab737ed8-fcc1-45c6-85f7-5d797415fd01" msprop:DbColumnName="NAME" msprop:FriendlyName="NAME" minOccurs="0">
+                  <xs:element name="NAME" msprop:design-time-name="597e5885-a696-45cb-96ba-e71cf211350d" msprop:DbColumnName="NAME" msprop:FriendlyName="NAME" minOccurs="0">
                     <xs:simpleType>
                       <xs:restriction base="xs:string">
                         <xs:maxLength value="20" />
                       </xs:restriction>
                     </xs:simpleType>
                   </xs:element>
-                  <xs:element name="STRASSE" msprop:design-time-name="a296e09c-f64d-49c9-b2e4-7afcdcbbedc6" msprop:DbColumnName="STRASSE" msprop:FriendlyName="STRASSE" minOccurs="0">
+                  <xs:element name="STRASSE" msprop:design-time-name="98475278-c40b-4020-bb1e-41fc1fef94d8" msprop:DbColumnName="STRASSE" msprop:FriendlyName="STRASSE" minOccurs="0">
                     <xs:simpleType>
                       <xs:restriction base="xs:string">
                         <xs:maxLength value="20" />
                       </xs:restriction>
                     </xs:simpleType>
                   </xs:element>
-                  <xs:element name="PLZ" msprop:design-time-name="0101f7e2-0fae-4ed3-a3b0-52aa065e89ab" msprop:DbColumnName="PLZ" msprop:FriendlyName="PLZ" minOccurs="0">
+                  <xs:element name="PLZ" msprop:design-time-name="8b6889c3-c23d-452d-a993-6977aacf5d61" msprop:DbColumnName="PLZ" msprop:FriendlyName="PLZ" minOccurs="0">
                     <xs:simpleType>
                       <xs:restriction base="xs:string">
                         <xs:maxLength value="5" />
                       </xs:restriction>
                     </xs:simpleType>
                   </xs:element>
-                  <xs:element name="WOHNORT" msprop:design-time-name="47f4b3cf-0a5f-4fb1-9f4f-87041fe27f6c" msprop:DbColumnName="WOHNORT" msprop:FriendlyName="WOHNORT" minOccurs="0">
+                  <xs:element name="WOHNORT" msprop:design-time-name="71ddd678-3cdc-4f22-b226-616fa6403091" msprop:DbColumnName="WOHNORT" msprop:FriendlyName="WOHNORT" minOccurs="0">
                     <xs:simpleType>
                       <xs:restriction base="xs:string">
                         <xs:maxLength value="20" />
@@ -158,25 +158,25 @@
                 </xs:sequence>
               </xs:complexType>
             </xs:element>
-            <xs:element name="ACF040_VERKAEUFER" msprop:design-time-name="741d137b-2e24-4073-89d2-ec187e03c802" msprop:DbTableName="VERKAEUFER" msprop:FriendlyName="VERKAEUFER" msprop:DbSchemaName="ACF040" msprop:TableType="Table">
+            <xs:element name="ACF040_VERKAEUFER" msprop:design-time-name="77e7a335-de80-4b2f-8adc-a28c2cfad7e0" msprop:DbTableName="VERKAEUFER" msprop:FriendlyName="VERKAEUFER" msprop:DbSchemaName="ACF040" msprop:TableType="Table">
               <xs:complexType>
                 <xs:sequence>
-                  <xs:element name="NAME" msprop:design-time-name="797d1431-97e8-49cb-ad21-a4f0e68acd9d" msprop:DbColumnName="NAME" msprop:FriendlyName="NAME">
+                  <xs:element name="NAME" msprop:design-time-name="b03f9776-840b-406b-bd6e-fbb9a2e1ae14" msprop:DbColumnName="NAME" msprop:FriendlyName="NAME">
                     <xs:simpleType>
                       <xs:restriction base="xs:string">
                         <xs:maxLength value="20" />
                       </xs:restriction>
                     </xs:simpleType>
                   </xs:element>
-                  <xs:element name="FILIALE" msprop:design-time-name="eded5880-0c3e-45ee-9a91-588246217f38" msprop:DbColumnName="FILIALE" msprop:FriendlyName="FILIALE">
+                  <xs:element name="FILIALE" msprop:design-time-name="fba75e15-3a9c-4124-bfc1-cd8f9d7ab9af" msprop:DbColumnName="FILIALE" msprop:FriendlyName="FILIALE">
                     <xs:simpleType>
                       <xs:restriction base="xs:string">
                         <xs:maxLength value="1" />
                       </xs:restriction>
                     </xs:simpleType>
                   </xs:element>
-                  <xs:element name="GEBURTSTAG" msprop:design-time-name="e6360366-3964-4c7b-825f-3aa7a3fb7253" msprop:DbColumnName="GEBURTSTAG" msprop:FriendlyName="GEBURTSTAG" type="xs:dateTime" />
-                  <xs:element name="WOHNORT" msprop:design-time-name="d1a289ca-ecaf-4606-8b71-ac589ccd0cf6" msprop:DbColumnName="WOHNORT" msprop:FriendlyName="WOHNORT" minOccurs="0">
+                  <xs:element name="GEBURTSTAG" msprop:design-time-name="2929619b-a373-4926-8e49-632c932584b5" msprop:DbColumnName="GEBURTSTAG" msprop:FriendlyName="GEBURTSTAG" type="xs:dateTime" />
+                  <xs:element name="WOHNORT" msprop:design-time-name="12d26bb8-3b17-45b4-a984-030224b2a3b5" msprop:DbColumnName="WOHNORT" msprop:FriendlyName="WOHNORT" minOccurs="0">
                     <xs:simpleType>
                       <xs:restriction base="xs:string">
                         <xs:maxLength value="20" />

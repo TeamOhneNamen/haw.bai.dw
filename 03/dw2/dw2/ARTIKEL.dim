@@ -1,4 +1,4 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="98a3b06f-9f89-45f2-a4a0-75d070426efc" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="c389bce0-54a2-422b-adcc-232ae0fc5e66" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>ARTIKEL</ID>
   <Name>ARTIKEL</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -65,42 +65,65 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
       <Value>100</Value>
     </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
+      <Value>
+        <DiagramLayout ZoomPercent="100" ViewPortX="0" ViewPortY="0" xmlns="">
+          <Shapes NodeWidth="85">
+            <Shape Id="ARTNR" Expanded="false">
+              <Attributes>
+                <Attribute Id="ARTNR" />
+              </Attributes>
+              <Position x="20" y="20" />
+            </Shape>
+            <Shape Id="GRPNAME" Expanded="false">
+              <Attributes>
+                <Attribute Id="GRPNAME" />
+              </Attributes>
+              <Position x="131" y="20" />
+            </Shape>
+            <Shape Id="ARTNAME" Expanded="false">
+              <Attributes>
+                <Attribute Id="ARTNAME" />
+              </Attributes>
+              <Position x="131" y="68" />
+            </Shape>
+          </Shapes>
+        </DiagramLayout>
+      </Value>
+    </Annotation>
   </Annotations>
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="0d9f06d9-a4de-4b53-a128-41e50cb3e806">
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="4c0e2794-6bc8-44c7-bb85-50063cd4fb48">
     <DataSourceViewID>Acf040</DataSourceViewID>
   </Source>
-  <ErrorConfiguration dwd:design-time-name="b4d9245d-f971-4b88-8177-79b49b992cd6">
+  <ErrorConfiguration dwd:design-time-name="aea6b4f0-2939-4d6d-8f04-b1c913ab1050">
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
   <Attributes>
-    <Attribute dwd:design-time-name="1578c1aa-802d-493a-8625-e4f129699714">
+    <Attribute dwd:design-time-name="0ef93fed-9f8e-477f-b38a-24905b1e70db">
       <ID>ARTNR</ID>
       <Name>ARTNR</Name>
       <Usage>Key</Usage>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="ac031d2b-e45a-40e8-a22c-c95262747a39">
+        <KeyColumn dwd:design-time-name="d43b7f2f-3096-4d36-9e60-25fb06d03b34">
           <DataType>Double</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="62891fe6-7815-40d5-851a-9ccc2b59c1f9">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5a228cbb-300b-4eb8-972f-0871d1bca85b">
             <TableID>ACF040_ARTIKEL</TableID>
             <ColumnID>ARTNR</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="007b39bb-80a9-46d0-b131-d192d2bacbc8">
+        <AttributeRelationship dwd:design-time-name="2c9fa970-4065-46fc-84c8-94f1b42f276e">
           <AttributeID>ARTNAME</AttributeID>
           <Name>ARTNAME</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="19e35980-dfbb-4dc5-a6f4-224191923e1e">
-          <AttributeID>ARTGRP</AttributeID>
-          <Name>ARTGRP</Name>
-        </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="65ed6c6b-463f-4f01-b02b-a4b07f4df113">
+        <AttributeRelationship dwd:design-time-name="df8fc9bf-c14e-4e76-a3fa-4d454037ab05">
           <AttributeID>GRPNAME</AttributeID>
           <Name>GRPNAME</Name>
         </AttributeRelationship>
@@ -109,72 +132,53 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="0c112c66-7f22-4ea2-a6ec-9e0a9bb9799b">
+    <Attribute dwd:design-time-name="4244a69c-7311-45bb-ac8d-c46edce35bb3">
       <ID>ARTNAME</ID>
       <Name>ARTNAME</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="f8985216-a0d7-4adb-a10a-ad7ab9f05b74">
+        <KeyColumn dwd:design-time-name="21e246b7-f2f8-4f7d-a2be-b31a18b084b5">
           <DataType>WChar</DataType>
           <DataSize>30</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="541446f5-b196-415c-bf56-e5ad088309cc">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d2c3623a-4f8a-44d9-9495-58ee3161163d">
             <TableID>ACF040_ARTIKEL</TableID>
             <ColumnID>ARTNAME</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <OrderBy>Key</OrderBy>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="7dcd5446-9ef7-4640-993c-6c0d23951b5a">
-      <ID>ARTGRP</ID>
-      <Name>ARTGRP</Name>
-      <KeyColumns>
-        <KeyColumn dwd:design-time-name="d37a236a-fca4-4f45-8469-039c02a9d615">
-          <DataType>WChar</DataType>
-          <DataSize>1</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="f73d7048-8e7e-4eab-88ad-9ab8ed208022">
-            <TableID>ACF040_ARTIKEL</TableID>
-            <ColumnID>ARTGRP</ColumnID>
-          </Source>
-        </KeyColumn>
-      </KeyColumns>
-      <OrderBy>Key</OrderBy>
-      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
-      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
-    </Attribute>
-    <Attribute dwd:design-time-name="fed13e92-4200-4b02-8165-eb3fb66a3710">
+    <Attribute dwd:design-time-name="70a97193-b11a-433f-a681-7616939752ce">
       <ID>GRPNAME</ID>
       <Name>GRPNAME</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="b9072290-e6f1-4e61-bca6-a124058882cd">
+        <KeyColumn dwd:design-time-name="5f06f936-5cc2-4703-99b8-0d4ee0376eff">
           <DataType>WChar</DataType>
           <DataSize>20</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="8af8ec91-60d0-4f81-9d4e-0c91c64ff375">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b9ef0a6e-a884-4403-9aea-68f0e87f2121">
             <TableID>ACF040_ARTIKEL</TableID>
             <ColumnID>GRPNAME</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <OrderBy>Key</OrderBy>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
   </Attributes>
   <Hierarchies>
-    <Hierarchy dwd:design-time-name="10822030-4f9d-4dc6-a611-e3fe5d26211e">
+    <Hierarchy dwd:design-time-name="79ea46b9-bb06-41ab-834d-54076aae7421">
       <ID>Hierarchie</ID>
       <Name>Hierarchie</Name>
       <Levels>
-        <Level dwd:design-time-name="f47d3988-4b4e-43bd-bc4d-47e0febf04ba">
-          <ID>ARTNAME</ID>
-          <Name>ARTNAME</Name>
-          <SourceAttributeID>ARTNAME</SourceAttributeID>
-        </Level>
-        <Level dwd:design-time-name="ea8ddede-dfec-4560-bbc7-891068a9c1d8">
+        <Level dwd:design-time-name="401c1b1b-7da7-42e8-a9c1-efb6d4c506dc">
           <ID>GRPNAME</ID>
           <Name>GRPNAME</Name>
           <SourceAttributeID>GRPNAME</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="c3911c0d-0a4e-4848-af73-2e96e2f457a5">
+          <ID>ARTNAME</ID>
+          <Name>ARTNAME</Name>
+          <SourceAttributeID>ARTNAME</SourceAttributeID>
         </Level>
       </Levels>
     </Hierarchy>

@@ -1,4 +1,4 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="319249e9-277b-409d-8410-2cfae462d9d0" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="0c582256-5ebc-4ee6-8828-6d3c43134356" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>VERKAEUFER</ID>
   <Name>VERKAEUFER</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -68,91 +68,27 @@
   </Annotations>
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="745c8e64-e056-4665-a493-316834a00084">
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="ee28c89e-8b62-42d5-a1f7-ac9797381a34">
     <DataSourceViewID>Acf040</DataSourceViewID>
   </Source>
-  <ErrorConfiguration dwd:design-time-name="e9c7ffcd-d246-4f31-8fa0-91ff523c99d8">
+  <ErrorConfiguration dwd:design-time-name="ffc71b79-22f4-4024-87b1-69e366a56ae5">
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
   <Attributes>
-    <Attribute dwd:design-time-name="4ac04ae0-ba1a-45c1-a206-d6c9372c3cbd">
+    <Attribute dwd:design-time-name="b6c18ed0-d17d-4172-b1d3-a76d8e98bd4a">
       <ID>NAME</ID>
       <Name>NAME</Name>
       <Usage>Key</Usage>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="84ef6633-35ec-4c37-8bb0-f2e53b4adf67">
+        <KeyColumn dwd:design-time-name="eb965130-7623-4d06-9b27-9f902201dc76">
           <DataType>WChar</DataType>
           <DataSize>20</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="8103ff77-1079-4b8e-a9a3-b62832ba45c9">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1f5ca43e-ca53-45b1-8376-48312bee2e29">
             <TableID>ACF040_VERKAEUFER</TableID>
             <ColumnID>NAME</ColumnID>
-          </Source>
-        </KeyColumn>
-      </KeyColumns>
-      <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="963763eb-d508-4f63-9dbb-c50a2af3bbdf">
-          <AttributeID>FILIALE</AttributeID>
-          <Name>FILIALE</Name>
-        </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="8355f38e-7521-4964-bf00-dd8152db395d">
-          <AttributeID>GEBURTSTAG</AttributeID>
-          <Name>GEBURTSTAG</Name>
-        </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="3b9470d5-2c7d-4486-b3c7-ae9bcd0bebbd">
-          <AttributeID>WOHNORT</AttributeID>
-          <Name>WOHNORT</Name>
-        </AttributeRelationship>
-      </AttributeRelationships>
-      <OrderBy>Key</OrderBy>
-      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
-      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
-    </Attribute>
-    <Attribute dwd:design-time-name="bd70650c-499d-4c96-9bf3-3f4818b17b14">
-      <ID>FILIALE</ID>
-      <Name>FILIALE</Name>
-      <KeyColumns>
-        <KeyColumn dwd:design-time-name="ffe65a53-ec61-4256-a844-b26b913b5b32">
-          <DataType>WChar</DataType>
-          <DataSize>1</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="6051cf4a-8d82-4df2-821f-8d60f671d304">
-            <TableID>ACF040_VERKAEUFER</TableID>
-            <ColumnID>FILIALE</ColumnID>
-          </Source>
-        </KeyColumn>
-      </KeyColumns>
-      <OrderBy>Key</OrderBy>
-      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
-      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
-    </Attribute>
-    <Attribute dwd:design-time-name="3d9094ac-6150-456f-b007-359dc4119278">
-      <ID>GEBURTSTAG</ID>
-      <Name>GEBURTSTAG</Name>
-      <KeyColumns>
-        <KeyColumn dwd:design-time-name="46408c75-0894-466f-b62f-48f3aac1c871">
-          <DataType>Date</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="a1299fbf-1619-40de-b1b1-9d0813d00224">
-            <TableID>ACF040_VERKAEUFER</TableID>
-            <ColumnID>GEBURTSTAG</ColumnID>
-          </Source>
-        </KeyColumn>
-      </KeyColumns>
-      <OrderBy>Key</OrderBy>
-      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
-      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
-    </Attribute>
-    <Attribute dwd:design-time-name="33ce8a9d-b100-4e76-9f24-8e4704e00d27">
-      <ID>WOHNORT</ID>
-      <Name>WOHNORT</Name>
-      <KeyColumns>
-        <KeyColumn dwd:design-time-name="5170eeb4-a594-4ebe-9c00-07c9cbc33859">
-          <DataType>WChar</DataType>
-          <DataSize>20</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="54bfb656-f579-4fc0-8de0-0b3c9009032a">
-            <TableID>ACF040_VERKAEUFER</TableID>
-            <ColumnID>WOHNORT</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
@@ -162,19 +98,14 @@
     </Attribute>
   </Attributes>
   <Hierarchies>
-    <Hierarchy dwd:design-time-name="c60addba-768c-494c-b9db-8a737454f3e9">
+    <Hierarchy dwd:design-time-name="4fb30d44-6a7c-48bf-b831-dc752d20ff17">
       <ID>Hierarchie</ID>
       <Name>Hierarchie</Name>
       <Levels>
-        <Level dwd:design-time-name="d318ed4a-1b71-404f-b513-6a02a79b5412">
+        <Level dwd:design-time-name="fe11638f-a558-4aa3-9e8b-0c3a232e0b42">
           <ID>NAME</ID>
           <Name>NAME</Name>
           <SourceAttributeID>NAME</SourceAttributeID>
-        </Level>
-        <Level dwd:design-time-name="8a5d244b-3259-4621-8916-4901a8e1e4fd">
-          <ID>FILIALE</ID>
-          <Name>FILIALE</Name>
-          <SourceAttributeID>FILIALE</SourceAttributeID>
         </Level>
       </Levels>
     </Hierarchy>

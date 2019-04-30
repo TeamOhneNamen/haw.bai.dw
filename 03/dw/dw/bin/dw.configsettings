@@ -16,13 +16,13 @@
         <ID>Dim Customer</ID>
       </Dimension>
       <Dimension>
+        <ID>Dim Product</ID>
+      </Dimension>
+      <Dimension>
         <ID>Dim Date</ID>
       </Dimension>
       <Dimension>
         <ID>Fact Internet Sales</ID>
-      </Dimension>
-      <Dimension>
-        <ID>Dim Product</ID>
       </Dimension>
     </Dimensions>
     <Cubes>

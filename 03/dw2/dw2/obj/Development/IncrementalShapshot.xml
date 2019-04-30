@@ -19,49 +19,49 @@
     <ObjectSnapshots>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
-        <TimeStamp>xyqrSq599CuQEx1olfvrZibhrdU=16.04.2019 14:43:1816.04.2019 14:43:18</TimeStamp>
+        <TimeStamp>WdN2NvFWQNxWHCbV/BKsbCfQrc0=30.04.2019 13:09:0730.04.2019 13:09:07</TimeStamp>
         <ID>
           <String>Acf040</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.DataSourceView</Type>
-        <TimeStamp>zajrjGCmEzu6Orm7VARAvttAJrc=16.04.2019 15:16:0916.04.2019 15:16:09</TimeStamp>
+        <TimeStamp>SoU4DlhQsonXQ4m5AX25FERklGY=30.04.2019 13:09:3230.04.2019 13:09:32</TimeStamp>
         <ID>
           <String>Acf040</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>hEznezhXUV+j2BsLBXJ3uu+6MD4=16.04.2019 15:18:2816.04.2019 15:16:32</TimeStamp>
+        <TimeStamp>x5DrBV3wjmwIcdOBJ0M73dc1q+A=30.04.2019 13:17:4630.04.2019 13:10:13</TimeStamp>
         <ID>
           <String>ARTIKEL</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>yEMx3bKldhd3IRG7LhW9F/Q1FfI=16.04.2019 15:18:2816.04.2019 15:16:45</TimeStamp>
+        <TimeStamp>5CsN764vYGDx8Sgx1PIf8DQ6fiw=30.04.2019 13:17:4630.04.2019 13:10:28</TimeStamp>
         <ID>
           <String>DATUM</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>OUX9lKI7IC9bAZk6U4oD3nIlqpY=16.04.2019 15:18:2816.04.2019 15:16:57</TimeStamp>
+        <TimeStamp>V20t0spZ9zdHDGqEa/Yb+3hTqmI=30.04.2019 14:22:0130.04.2019 13:10:39</TimeStamp>
         <ID>
           <String>KUNDEN</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>/zrQ06sJdI1V7IWjT9LqJE/l3E4=16.04.2019 15:18:2816.04.2019 15:17:10</TimeStamp>
+        <TimeStamp>gMkbCwEoTA/zLuIUs42K4KXeDEk=30.04.2019 13:17:4630.04.2019 13:10:50</TimeStamp>
         <ID>
           <String>VERKAEUFER</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Cube</Type>
-        <TimeStamp>AnnAWObUQMrxyPAvsDHTc9/wLFU=16.04.2019 15:18:2816.04.2019 15:18:28Kg7U0Xw6cIv3fGExjaEvkGkgRjQ=16.04.2019 15:18:2816.04.2019 15:18:28</TimeStamp>
+        <TimeStamp>VySM0m4b6DTvqIxRAa2np6ntlas=30.04.2019 13:20:2130.04.2019 13:20:219uWmRpbGku5cV7PZsMnXTg9LkUc=30.04.2019 13:20:2130.04.2019 13:20:21</TimeStamp>
         <ID>
           <String>Acf040</String>
         </ID>
@@ -78,5 +78,5 @@
   </Snapshot>
   <AssemblyLocations />
   <ProcessingComplete>true</ProcessingComplete>
-  <LastDeployed>2019-04-16T13:20:00.816667Z</LastDeployed>
+  <LastDeployed>2019-04-30T12:22:02.92Z</LastDeployed>
 </DeploymentSnapshot>

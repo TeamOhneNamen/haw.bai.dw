@@ -4,12 +4,16 @@ insert into kunden values(12,'Olaf','Meier','Bremer Landstraße','21680','Stade'
 insert into kunden values(13,'Jakob','Schmidt','Berner Heerweg 13','20098','Hamburg');
 insert into kunden values(14,'Elke','Bremer','Berliner Tor 21','20099','Hamburg');
 insert into kunden values(15,'Klaus','Kunstmann','Berliner Tor 11','20099','Hamburg');
-insert into kunden values(16,'Julia','Jürgens','Stadtbrücke 7','21680','Stade');
+insert into kunden values(16,'Julia','Juergens','Stadtbruecke 7','21680','Stade');
 insert into kunden values(17,'Andreas','Schmitt','Berstrasse 7a','21680','Stade');
 insert into kunden values(18,'Andreas','Bremer','Holtenauer Allee 4','24123','Kiel');
 insert into kunden values(19,'Klaus','Abraham','Schloss 56','24123','Kiel');
 insert into kunden values(20,'Katharina','Klein','Laboer Landweg 145','24123','Kiel');
 
+Insert into ACF040.VERKAEUFER (NAME,FILIALE,GEBURTSTAG,WOHNORT) values ('Carlo','A',to_date('06.03.90','DD.MM.RR'),'Hamburg');
+Insert into ACF040.VERKAEUFER (NAME,FILIALE,GEBURTSTAG,WOHNORT) values ('Julia','B',to_date('17.10.82','DD.MM.RR'),'Kiel');
+Insert into ACF040.VERKAEUFER (NAME,FILIALE,GEBURTSTAG,WOHNORT) values ('Felix','B',to_date('30.11.88','DD.MM.RR'),'Eutin');
+Insert into ACF040.VERKAEUFER (NAME,FILIALE,GEBURTSTAG,WOHNORT) values ('Katharina','A',to_date('19.04.88','DD.MM.RR'),'Ahrensburg');
 
 INSERT INTO TEMPABSATZ (FILIALE, DATUM, UHRZEIT, ARTIKEL, ANZAHL, PREIS, VERKAEUFER, KUNDE) VALUES ('B',to_date('1.9.2012', 'DD.MM.RR'),'9:10',2001,1,209949,'Felix',NULL);
 --Zeile 24
