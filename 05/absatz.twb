@@ -1,0 +1,804 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20181.19.0417.0908                               -->
+<workbook original-version='18.1' source-build='2018.1.12 (20181.19.0417.0908)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='ABSATZ (ACF040)' inline='true' name='federated.0ttyt3x037e0fu0ztkg2v0flr9zb' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='ora14.informatik.haw-hamburg.de' name='oracle.151o6mr11r0uhv12h44x10b246yy'>
+            <connection authentication='RDBMS' class='oracle' one-time-sql='' port='1521' schema='ACF040' server='ora14.informatik.haw-hamburg.de' service='inf14.informatik.haw-hamburg.de' sslmode='' username='acf040' />
+          </named-connection>
+        </named-connections>
+        <relation join='inner' type='join'>
+          <clause type='join'>
+            <expression op='='>
+              <expression op='[ABSATZ].[VERKAEUFER]' />
+              <expression op='[VERKAEUFER].[NAME]' />
+            </expression>
+          </clause>
+          <relation join='inner' type='join'>
+            <clause type='join'>
+              <expression op='='>
+                <expression op='[ABSATZ].[DATUM]' />
+                <expression op='[DATUM].[DATUM]' />
+              </expression>
+            </clause>
+            <relation join='inner' type='join'>
+              <clause type='join'>
+                <expression op='='>
+                  <expression op='[ABSATZ].[KUNDENNUMMER]' />
+                  <expression op='[KUNDEN].[KUNDENNUMMER]' />
+                </expression>
+              </clause>
+              <relation join='inner' type='join'>
+                <clause type='join'>
+                  <expression op='='>
+                    <expression op='[ABSATZ].[ARTIKEL]' />
+                    <expression op='[ARTIKEL].[ARTNR]' />
+                  </expression>
+                </clause>
+                <relation connection='oracle.151o6mr11r0uhv12h44x10b246yy' name='ABSATZ' table='[ACF040].[ABSATZ]' type='table' />
+                <relation connection='oracle.151o6mr11r0uhv12h44x10b246yy' name='ARTIKEL' table='[ACF040].[ARTIKEL]' type='table' />
+              </relation>
+              <relation connection='oracle.151o6mr11r0uhv12h44x10b246yy' name='KUNDEN' table='[ACF040].[KUNDEN]' type='table' />
+            </relation>
+            <relation connection='oracle.151o6mr11r0uhv12h44x10b246yy' name='DATUM' table='[ACF040].[DATUM]' type='table' />
+          </relation>
+          <relation connection='oracle.151o6mr11r0uhv12h44x10b246yy' name='VERKAEUFER' table='[ACF040].[VERKAEUFER]' type='table' />
+        </relation>
+        <cols>
+          <map key='[ANZAHL]' value='[ABSATZ].[ANZAHL]' />
+          <map key='[ARTGRP]' value='[ARTIKEL].[ARTGRP]' />
+          <map key='[ARTIKEL]' value='[ABSATZ].[ARTIKEL]' />
+          <map key='[ARTNAME]' value='[ARTIKEL].[ARTNAME]' />
+          <map key='[ARTNR]' value='[ARTIKEL].[ARTNR]' />
+          <map key='[DATUM (DATUM)]' value='[DATUM].[DATUM]' />
+          <map key='[DATUM]' value='[ABSATZ].[DATUM]' />
+          <map key='[FILIALE (VERKAEUFER)]' value='[VERKAEUFER].[FILIALE]' />
+          <map key='[FILIALE]' value='[ABSATZ].[FILIALE]' />
+          <map key='[GEBURTSTAG]' value='[VERKAEUFER].[GEBURTSTAG]' />
+          <map key='[GRPNAME]' value='[ARTIKEL].[GRPNAME]' />
+          <map key='[JAHR]' value='[DATUM].[JAHR]' />
+          <map key='[KUNDENNUMMER (KUNDEN)]' value='[KUNDEN].[KUNDENNUMMER]' />
+          <map key='[KUNDENNUMMER]' value='[ABSATZ].[KUNDENNUMMER]' />
+          <map key='[MONAT]' value='[DATUM].[MONAT]' />
+          <map key='[NAME (VERKAEUFER)]' value='[VERKAEUFER].[NAME]' />
+          <map key='[NAME]' value='[KUNDEN].[NAME]' />
+          <map key='[PLZ]' value='[KUNDEN].[PLZ]' />
+          <map key='[PREIS]' value='[ABSATZ].[PREIS]' />
+          <map key='[STRASSE]' value='[KUNDEN].[STRASSE]' />
+          <map key='[TAG]' value='[DATUM].[TAG]' />
+          <map key='[UHRZEIT]' value='[ABSATZ].[UHRZEIT]' />
+          <map key='[UMSATZ]' value='[ABSATZ].[UMSATZ]' />
+          <map key='[VERKAEUFER]' value='[ABSATZ].[VERKAEUFER]' />
+          <map key='[VORNAME]' value='[KUNDEN].[VORNAME]' />
+          <map key='[WOHNORT (VERKAEUFER)]' value='[VERKAEUFER].[WOHNORT]' />
+          <map key='[WOHNORT]' value='[KUNDEN].[WOHNORT]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>FILIALE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[FILIALE]</local-name>
+            <parent-name>[ABSATZ]</parent-name>
+            <remote-alias>FILIALE</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>1</width>
+            <contains-null>false</contains-null>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=46,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DATUM</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[DATUM]</local-name>
+            <parent-name>[ABSATZ]</parent-name>
+            <remote-alias>DATUM</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>10</width>
+            <contains-null>false</contains-null>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=46,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>UHRZEIT</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[UHRZEIT]</local-name>
+            <parent-name>[ABSATZ]</parent-name>
+            <remote-alias>UHRZEIT</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>5</width>
+            <contains-null>false</contains-null>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=46,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ARTIKEL</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[ARTIKEL]</local-name>
+            <parent-name>[ABSATZ]</parent-name>
+            <remote-alias>ARTIKEL</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>4</precision>
+            <scale>0</scale>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ANZAHL</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[ANZAHL]</local-name>
+            <parent-name>[ABSATZ]</parent-name>
+            <remote-alias>ANZAHL</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>5</precision>
+            <scale>0</scale>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PREIS</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[PREIS]</local-name>
+            <parent-name>[ABSATZ]</parent-name>
+            <remote-alias>PREIS</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>7</precision>
+            <scale>2</scale>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>UMSATZ</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[UMSATZ]</local-name>
+            <parent-name>[ABSATZ]</parent-name>
+            <remote-alias>UMSATZ</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>35</precision>
+            <scale>2</scale>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>VERKAEUFER</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[VERKAEUFER]</local-name>
+            <parent-name>[ABSATZ]</parent-name>
+            <remote-alias>VERKAEUFER</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>20</width>
+            <contains-null>false</contains-null>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=46,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>KUNDENNUMMER</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[KUNDENNUMMER]</local-name>
+            <parent-name>[ABSATZ]</parent-name>
+            <remote-alias>KUNDENNUMMER</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>5</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ARTNR</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[ARTNR]</local-name>
+            <parent-name>[ARTIKEL]</parent-name>
+            <remote-alias>ARTNR</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>4</precision>
+            <scale>0</scale>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ARTNAME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ARTNAME]</local-name>
+            <parent-name>[ARTIKEL]</parent-name>
+            <remote-alias>ARTNAME</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>30</width>
+            <contains-null>false</contains-null>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=46,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ARTGRP</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ARTGRP]</local-name>
+            <parent-name>[ARTIKEL]</parent-name>
+            <remote-alias>ARTGRP</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>1</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_AFC{charset=46,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GRPNAME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[GRPNAME]</local-name>
+            <parent-name>[ARTIKEL]</parent-name>
+            <remote-alias>GRPNAME</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>20</width>
+            <contains-null>true</contains-null>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=46,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>KUNDENNUMMER</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[KUNDENNUMMER (KUNDEN)]</local-name>
+            <parent-name>[KUNDEN]</parent-name>
+            <remote-alias>KUNDENNUMMER</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>5</precision>
+            <scale>0</scale>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>VORNAME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[VORNAME]</local-name>
+            <parent-name>[KUNDEN]</parent-name>
+            <remote-alias>VORNAME</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>20</width>
+            <contains-null>true</contains-null>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=46,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NAME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NAME]</local-name>
+            <parent-name>[KUNDEN]</parent-name>
+            <remote-alias>NAME</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>20</width>
+            <contains-null>true</contains-null>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=46,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>STRASSE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[STRASSE]</local-name>
+            <parent-name>[KUNDEN]</parent-name>
+            <remote-alias>STRASSE</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>20</width>
+            <contains-null>true</contains-null>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=46,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PLZ</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PLZ]</local-name>
+            <parent-name>[KUNDEN]</parent-name>
+            <remote-alias>PLZ</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>5</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_AFC{charset=46,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WOHNORT</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[WOHNORT]</local-name>
+            <parent-name>[KUNDEN]</parent-name>
+            <remote-alias>WOHNORT</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>20</width>
+            <contains-null>true</contains-null>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=46,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DATUM</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[DATUM (DATUM)]</local-name>
+            <parent-name>[DATUM]</parent-name>
+            <remote-alias>DATUM</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>10</width>
+            <contains-null>false</contains-null>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=46,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>JAHR</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[JAHR]</local-name>
+            <parent-name>[DATUM]</parent-name>
+            <remote-alias>JAHR</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>4</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MONAT</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[MONAT]</local-name>
+            <parent-name>[DATUM]</parent-name>
+            <remote-alias>MONAT</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>2</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TAG</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[TAG]</local-name>
+            <parent-name>[DATUM]</parent-name>
+            <remote-alias>TAG</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>2</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NAME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NAME (VERKAEUFER)]</local-name>
+            <parent-name>[VERKAEUFER]</parent-name>
+            <remote-alias>NAME</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>20</width>
+            <contains-null>false</contains-null>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=46,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FILIALE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[FILIALE (VERKAEUFER)]</local-name>
+            <parent-name>[VERKAEUFER]</parent-name>
+            <remote-alias>FILIALE</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>1</width>
+            <contains-null>false</contains-null>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=46,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GEBURTSTAG</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[GEBURTSTAG]</local-name>
+            <parent-name>[VERKAEUFER]</parent-name>
+            <remote-alias>GEBURTSTAG</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <scale>0</scale>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_DAT&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WOHNORT</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[WOHNORT (VERKAEUFER)]</local-name>
+            <parent-name>[VERKAEUFER]</parent-name>
+            <remote-alias>WOHNORT</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>20</width>
+            <contains-null>true</contains-null>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=46,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Anzahl' datatype='integer' name='[ANZAHL]' role='measure' type='quantitative' />
+      <column caption='Artgrp' datatype='string' name='[ARTGRP]' role='dimension' type='nominal' />
+      <column aggregation='Sum' caption='Artikel' datatype='integer' name='[ARTIKEL]' role='dimension' type='ordinal' />
+      <column caption='Artname' datatype='string' name='[ARTNAME]' role='dimension' type='nominal' />
+      <column aggregation='Sum' caption='Artnr' datatype='integer' name='[ARTNR]' role='dimension' type='ordinal' />
+      <column caption='Datum (Datum)' datatype='string' name='[DATUM (DATUM)]' role='dimension' type='nominal' />
+      <column caption='Datum' datatype='string' name='[DATUM]' role='dimension' type='nominal' />
+      <column caption='Filiale (Verkaeufer)' datatype='string' name='[FILIALE (VERKAEUFER)]' role='dimension' type='nominal' />
+      <column caption='Filiale' datatype='string' name='[FILIALE]' role='dimension' type='nominal' />
+      <column caption='Geburtstag' datatype='datetime' name='[GEBURTSTAG]' role='dimension' type='ordinal' />
+      <column caption='Grpname' datatype='string' name='[GRPNAME]' role='dimension' type='nominal' />
+      <column caption='Jahr' datatype='integer' name='[JAHR]' role='dimension' type='quantitative' />
+      <column aggregation='Sum' caption='Kundennummer (Kunden)' datatype='integer' name='[KUNDENNUMMER (KUNDEN)]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' caption='Kundennummer' datatype='integer' name='[KUNDENNUMMER]' role='dimension' type='ordinal' />
+      <column caption='Monat' datatype='integer' name='[MONAT]' role='dimension' type='quantitative' />
+      <column caption='Name (Verkaeufer)' datatype='string' name='[NAME (VERKAEUFER)]' role='dimension' type='nominal' />
+      <column caption='Name' datatype='string' name='[NAME]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column datatype='string' name='[PLZ]' role='dimension' semantic-role='[ZipCode].[Name]' type='nominal' />
+      <column caption='Preis' datatype='real' name='[PREIS]' role='measure' type='quantitative' />
+      <column caption='Strasse' datatype='string' name='[STRASSE]' role='dimension' type='nominal' />
+      <column caption='Uhrzeit' datatype='string' name='[UHRZEIT]' role='dimension' type='nominal' />
+      <column caption='Umsatz' datatype='real' name='[UMSATZ]' role='measure' type='quantitative' />
+      <column caption='Verkaeufer' datatype='string' name='[VERKAEUFER]' role='dimension' type='nominal' />
+      <column caption='Vorname' datatype='string' name='[VORNAME]' role='dimension' type='nominal' />
+      <column caption='Wohnort (Verkaeufer)' datatype='string' name='[WOHNORT (VERKAEUFER)]' role='dimension' type='nominal' />
+      <column caption='Wohnort' datatype='string' name='[WOHNORT]' role='dimension' type='nominal' />
+      <column-instance column='[KUNDENNUMMER]' derivation='None' name='[none:KUNDENNUMMER:ok]' pivot='key' type='ordinal' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.562982' measure-ordering='alphabetic' measure-percentage='0.437018' show-structure='true' user-set-layout='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:KUNDENNUMMER:ok]' type='palette'>
+            <map to='#499894'>
+              <bucket>17</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>0</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>13</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>18</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>14</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>1</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>15</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>19</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>16</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>11</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>12</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Deutschland&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Blatt 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ABSATZ (ACF040)' name='federated.0ttyt3x037e0fu0ztkg2v0flr9zb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ttyt3x037e0fu0ztkg2v0flr9zb'>
+            <column aggregation='Sum' caption='Kundennummer' datatype='integer' name='[KUNDENNUMMER]' role='dimension' type='ordinal' />
+            <column caption='Umsatz' datatype='real' name='[UMSATZ]' role='measure' type='quantitative' />
+            <column-instance column='[KUNDENNUMMER]' derivation='None' name='[none:KUNDENNUMMER:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[UMSATZ]' derivation='Sum' name='[sum:UMSATZ:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0ttyt3x037e0fu0ztkg2v0flr9zb].[sum:UMSATZ:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.0ttyt3x037e0fu0ztkg2v0flr9zb].[none:KUNDENNUMMER:ok]' />
+              <wedge-size column='[federated.0ttyt3x037e0fu0ztkg2v0flr9zb].[sum:UMSATZ:qk]' />
+              <size column='[federated.0ttyt3x037e0fu0ztkg2v0flr9zb].[sum:UMSATZ:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Blatt 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='169'>
+            <card pane-specification-id='0' param='[federated.0ttyt3x037e0fu0ztkg2v0flr9zb].[none:KUNDENNUMMER:ok]' type='color' />
+            <card pane-specification-id='0' param='[federated.0ttyt3x037e0fu0ztkg2v0flr9zb].[sum:UMSATZ:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <selection-collection>
+          <tuple-selection>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0ttyt3x037e0fu0ztkg2v0flr9zb].[none:KUNDENNUMMER:ok]</field>
+                  <field>[federated.0ttyt3x037e0fu0ztkg2v0flr9zb].[sum:UMSATZ:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>0</value>
+                <value>24.899999999999999</value>
+              </tuple>
+            </tuple-reference>
+          </tuple-selection>
+        </selection-collection>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0ttyt3x037e0fu0ztkg2v0flr9zb].[none:ARTIKEL:ok]</field>
+            <field>[federated.0ttyt3x037e0fu0ztkg2v0flr9zb].[none:KUNDENNUMMER:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Blatt 1' width='192'>
+      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
+      sS0okAAAAABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
